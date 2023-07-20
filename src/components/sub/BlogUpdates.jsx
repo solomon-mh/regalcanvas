@@ -10,7 +10,7 @@ export default function BlogUpdates() {
     dots: true,
     dotsClass: "slick-dots custom-dots",
     infinite: true,
-    speed: 500,
+    speed: 2500,
     slidesToShow: 3,
     slidesToScroll: 3,
   };
@@ -61,6 +61,18 @@ export default function BlogUpdates() {
           ))}
         </Slider>
       </div>
+      <style jsx>
+        {`
+          /* Custom dot size */
+          .custom-dots li button:before {
+            width: 12px;
+            height: 12px;
+            margin: 12px;
+            background-color: black;
+            border-radius: 50%;
+          }
+        `}
+      </style>
     </div>
   );
 }
