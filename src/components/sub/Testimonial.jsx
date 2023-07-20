@@ -42,28 +42,28 @@ const Testimonials = [
 export default function Testimonial() {
   return (
     <div className='text-center'>
-      <h1 className='text-4xl text-black font-sans font-light mt-20 mb-8 '>
+      <h1 className='text-4xl text-black font-sans  mt-20 mb-8 '>
         Testimonials
       </h1>
       <div
-        className='text-left grid space-x-8 grid-cols-4 box-border justify-center'
-        style={{ gridTemplateColumns: "repeat(4, 21%)" }}
+        className='text-left grid gap-8 grid-cols-4 box-border justify-center'
+        style={{ gridTemplateColumns: "repeat(4, 20%)" }}
       >
         {Testimonials.map((test) => (
-          <div className='bg-antiquewhite py-8 px-6'>
-            <div className='flex items-center space-x-8 m-3'>
-              <div>
+          <div className='bg-antiquewhite py-8 px-4'>
+            <div className='flex justify-between items-center space-x-4 m-3'>
+              <div className='w-1/2'>
                 <p className='font-extrabold text-xl leading-6 font-sans text-brightRed'>
                   {test.name}
                 </p>
                 <small>{test.catagory}</small>
               </div>
-              <div className='w-20 h-20 border-2 overflow-hidden'>
-                {/* <img
+              <div className='w-14 h-14  rounded-full overflow-hidden'>
+                <img
                   className='w-full h-full object-cover'
                   src={test.img}
                   alt={`person ${test.id}`}
-                /> */}
+                />
               </div>
             </div>
             <p>{test.testimony}</p>
