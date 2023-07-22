@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SocialMediaIcon, { SmallSocialMediaIcon } from "./sub/SocialMediaIcon";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SmallSocialMediaIcon } from "./sub/SocialMediaIcon";
 import {
   faFacebookF,
   faInstagram,
   faTwitter,
   faSkype,
-  faLinkedin,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 export default function FooterSection() {
   return (
     <div>
-      <div className='grid grid-cols-4 gap-6 mx-12 px-12 py-24'>
-        <div className='mx-auto'>
+      <div className='grid grid-cols-1  gap-6 mx-4 px-4 lg:mx-12 lg:px-12 py-24 lg:grid-cols-4'>
+        <div className='text-left mx-auto'>
           <h1 className='font-bold text-brightRed'>MONARCHY</h1>
           <p className='leading-8'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
@@ -21,7 +20,7 @@ export default function FooterSection() {
             repellat suscipit.
           </p>
         </div>
-        <div className='mx-auto leading-10'>
+        <div className='lg:mx-auto leading-10'>
           <ul>
             <li className='nav-links'>
               <Link to='/Contact'>Contact</Link>
@@ -31,7 +30,7 @@ export default function FooterSection() {
             <li className='nav-links'>Support</li>
           </ul>
         </div>
-        <div className='mx-auto leading-10'>
+        <div className='lg:mx-auto leading-10'>
           <ul>
             <li className='nav-links'>
               <Link to='/'>Home</Link>
@@ -47,7 +46,7 @@ export default function FooterSection() {
             </li>
           </ul>
         </div>
-        <div className='mx-auto leading-10'>
+        <div className='lg:mx-auto leading-10'>
           <ul>
             <li className='nav-links'>
               <Link to='/'>Home</Link>
@@ -69,7 +68,7 @@ export default function FooterSection() {
           <SmallSocialMediaIcon icon={faFacebookF} />
           <SmallSocialMediaIcon icon={faInstagram} />
           <SmallSocialMediaIcon icon={faTwitter} />
-          <SmallSocialMediaIcon icon={faLinkedin} />
+          <SmallSocialMediaIcon icon={faLinkedinIn} />
           <SmallSocialMediaIcon icon={faSkype} />
         </ul>
       </div>
