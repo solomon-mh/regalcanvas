@@ -7,15 +7,15 @@ import image4 from "../assets/img4.png";
 import image5 from "../assets/img5.png";
 import image6 from "../assets/img1.png";
 
-const imgArr = [image1, image2, image3, image4, image5, image6];
+export const imgArr = [image1, image2, image3, image4, image5, image6];
 
 export default function PortfolioImgCont() {
   return (
-    <div>
-      <h1 className='text-4xl text-black  m-12'>Portfolio</h1>
-      <div className='w-full px-12 grid grid-cols-3 justify-center items-center'>
+    <div className='px-2 mx-16'>
+      <h1 className='text-4xl text-black font-sans m-12'>Portfolio</h1>
+      <div className='w-full grid grid-cols-1 gap-4 justify-center items-center sm:grid-cols-2 lg:grid-cols-3'>
         {imgArr.map((img, index) => (
-          <div className='m-4 h-48 w-90perc box-border overflow-hidden'>
+          <div className='m-4 h-48 w-full box-border overflow-hidden'>
             <img
               className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
               key={index}

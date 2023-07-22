@@ -41,13 +41,11 @@ const Testimonials = [
 
 export default function Testimonial() {
   return (
-    <div className='text-center'>
-      <h1 className='text-4xl text-black font-sans  mt-20 mb-8 '>
-        Testimonials
-      </h1>
+    <div className='text-center bg-white py-32'>
+      <h1 className='text-4xl text-black font-sans py-20 '>Testimonials</h1>
       <div
-        className='text-left grid gap-8 grid-cols-4 box-border justify-center'
-        style={{ gridTemplateColumns: "repeat(4, 20%)" }}
+        className='text-left grid grid-cols-1 lg:gap-8 lg:grid-cols-4 sm:px-12 box-border justify-center'
+        lg:style={{ gridTemplateColumns: "repeat(4, 20%)" }}
       >
         {Testimonials.map((test) => (
           <div className='bg-antiquewhite py-8 px-4'>
