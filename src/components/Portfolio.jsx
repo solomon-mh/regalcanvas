@@ -1,11 +1,13 @@
 import React from "react";
+import PortfolioImgCont from "./PortfolioImgCont";
+import FooterSection from "./FooterSection";
 
-export default function Blog() {
+export default function Portfolio() {
   return (
     <div>
-      <div className='container mx-auto  text-center w-full lg:w-3/4 p-6 '>
+      <div className='container mx-auto  text-center w-full lg:w-3/4 p-6 md:p-12 lg:p-20'>
         <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
-          Blog Updates
+          Our Portfolio
         </h1>
         <p className='leading-8 hidden sm:block'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
@@ -18,9 +20,15 @@ export default function Blog() {
           nulla quos suscipit laborum fugit aspernatur rem pariatur illo.
         </p>
       </div>
-      <div>
-        
+      <div
+        style={{
+          backgroundColor: "white",
+        }}
+        className='py-16'
+      >
+        <PortfolioImgCont />
       </div>
+      <FooterSection />
     </div>
   );
 }

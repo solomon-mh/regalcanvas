@@ -29,20 +29,24 @@ export default function Contact() {
   };
   return (
     <div>
-      <div className='container mx-auto text-center w-3/4 pt-28 pb-64'>
-        <h1 className='text-brightRed text-6xl font-bold font-sans mb-12'>
+      <div className='container mx-auto text-center w-full  lg:w-3/4 p-8 md:p-12 lg:p-20'>
+        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
           Contact Us
         </h1>
-        <p className='leading-8'>
+        <p className='leading-8 hidden sm:block'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
           incidunt vitae fugit harum architecto doloribus facere omnis
           recusandae pariatur porro quis alias quas animi, dignissimos fuga ab
           reprehenderit repudiandae ea?
         </p>
+        <p className='leading-8 block sm:hidden'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem
+          nulla quos suscipit laborum fugit aspernatur rem pariatur illo.
+        </p>
       </div>
-      <div className='bg-white flex gap-16 justify-center items-center px-20 py-28'>
+      <div className='bg-white block px-12 sm:px-24 gap-16 justify-center items-center lg:flex lg:px-20 lg:py-28'>
         <form onSubmit={handleSumbmit} method='post'>
-          <div className='flex space-x-8'>
+          <div className='lg:flex lg:space-x-8'>
             <input
               ref={firstInputRef}
               type='text'
@@ -93,11 +97,11 @@ export default function Contact() {
             }}
             className='relative w-full px-4 py-5 border-1 rounded border-slate-600'
           />
-          <button className='py-3 my-3 rounded-3xl bg-brightRed text-white w-1/2 text-center transition-all duration-500 hover:bg-BrighterRed'>
+          <button className=' w-full py-3 my-3 rounded-3xl bg-brightRed text-white lg:w-1/2 text-center transition-all duration-500 hover:bg-BrighterRed'>
             Send Message
           </button>
         </form>
-        <div className='w-1/4 px-2'>
+        <div className='w-full lg:w-1/4 px-2 py-12'>
           <h1 className='text-3xl py-8'>Contact info</h1>
           <b className='font-semibold pt-3 block'>Address</b>
           <p className='text-simpleLight'>

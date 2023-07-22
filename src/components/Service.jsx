@@ -1,11 +1,14 @@
 import React from "react";
+import Products from "./sub/Products";
+import Testimonial from "./sub/Testimonial";
+import FooterSection from "./FooterSection";
 
-export default function Blog() {
+export default function Service() {
   return (
     <div>
-      <div className='container mx-auto  text-center w-full lg:w-3/4 p-6 '>
+      <div className='container mx-auto text-center w-full  lg:w-3/4 p-8 md:p-12 lg:p-20'>
         <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
-          Blog Updates
+          Our Services
         </h1>
         <p className='leading-8 hidden sm:block'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
@@ -18,9 +21,10 @@ export default function Blog() {
           nulla quos suscipit laborum fugit aspernatur rem pariatur illo.
         </p>
       </div>
-      <div>
-        
-      </div>
+      <Products />
+      <Products />
+      <Testimonial />
+      <FooterSection />
     </div>
   );
 }
