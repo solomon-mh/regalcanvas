@@ -1,0 +1,14 @@
+.nav-links {
+  color: #757575 !important;
+  transition: all ease 0.3s;
+}
+.nav-links:hover {
+  cursor: pointer;
+  color: #161515 !important;
+}
+.active-link {
+  color: #000000 !important;
+}
+.active-link-sm {
+  color: #f26200;
+}

@@ -13,8 +13,8 @@ import SocialMediaIcon from "./sub/SocialMediaIcon";
 export default function About() {
   return (
     <div>
-      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20'>
-        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
+      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-loose word-spacing-4 lg:px-24 font-bold font-sans mb-12'>
           About Us
         </h1>
         <p className='leading-8 hidden sm:block'>
@@ -28,7 +28,7 @@ export default function About() {
           nulla quos suscipit laborum fugit aspernatur rem pariatur illo.
         </p>
       </div>
-      <div className='bg-white py-32'>
+      <div className='bg-white'>
         <section className='block px-8 sm:px-28 lg:grid grid-cols-2 lg:px-0 lg:py-24 gap-4 lg:mx-20'>
           <div className='pt-12'>
             <img src={office} alt='office' />

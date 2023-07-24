@@ -6,8 +6,8 @@ import FooterSection from "./FooterSection";
 export default function Service() {
   return (
     <div>
-      <div className='container mx-auto text-center w-full  lg:w-3/4 p-8 md:p-12 lg:p-20'>
-        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
+      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-loose word-spacing-4 lg:px-24 font-bold font-sans mb-12'>
           Our Services
         </h1>
         <p className='leading-8 hidden sm:block'>

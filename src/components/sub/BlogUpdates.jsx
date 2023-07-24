@@ -10,22 +10,37 @@ export default function BlogUpdates() {
     dots: true,
     dotsClass: "slick-dots custom-dots",
     infinite: true,
-    speed: 2500,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   return (
     <div className='mx-4 px-2 mb-12'>
-      <div style={{ wordSpacing: "1px" }} className='py-12 px-8 w-3/5'>
-        <h1 className='text-3xl text-black font-sans font-bold my-6'>
-          Blog Updates
-        </h1>
-        <p className='leading-9 text-xl pr-10'>
+      <div style={{ wordSpacing: "1px" }} className='py-12 px-10 w-full'>
+        <h1 className='text-3xl font-sans font-bold my-6'>Blog Updates</h1>
+        <p className='leading-9 text-xl pr-10 text-gray-500'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
           ducimus facere quam eos tempore beatae non eius, provident
         </p>
       </div>
-      <div className='w-full px-4'>
+      <div className='w-full px-6'>
         <Slider {...settings}>
           {imgArr.map((img, index) => (
             <div

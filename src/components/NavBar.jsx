@@ -16,17 +16,20 @@ export default function NavBar() {
   };
 
   return (
-    <nav className='flex gap-8 justify-end w-full px-6 lg:p-12 lg:pr-24 '>
+    <nav
+      id='nav-bar'
+      className='flex gap-12 justify-between sm:justify-end w-full px-6 pr-0 lg:p-12  lg:pr-24 '
+    >
       <div className='container mx-auto px-4 md:px-8'>
-        <div className='flex justify-between items-center h-16'>
-          <div className='mr-auto text-brightRed font-bold cursor-pointer'>
+        <div className='flex justify-between -ml-4 items-center h-16'>
+          <div className='mr-auto  text-brightRed font-bold cursor-pointer'>
             MONARCHY
           </div>
           {/* Hamburger menu icon */}
           <div className='md:hidden'>
             <button
               onClick={handleMenuToggle}
-              className='flex items-center px-3 ml-3 -mr-3 py-2 border rounded text-brightRed border-brightRed hover:text-white hover:bg-brightRed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-brightRed'
+              className='flex items-center px-3 mt-6 py-2 border rounded text-brightRed border-brightRed hover:text-white hover:bg-brightRed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-brightRed'
             >
               <svg
                 className='h-4 w-4 fill-current'
@@ -109,7 +112,7 @@ export default function NavBar() {
       </div>
       {/* Mobile menu */}
       {menuOpen && (
-        <div className='md:hidden ml-1 px-12 relative mx-0 bg-white'>
+        <div className='md:hidden pr-12 relative bg-white mx-0'>
           <div className='px-2 w-48 py-4 space-y-1'>
             <Link
               className={`block px-3 py-2 rounded-md text-base font-medium ${

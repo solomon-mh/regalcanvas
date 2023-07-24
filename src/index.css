@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  line-height: 1.7;
+  font-weight: 300;
+  color: #000;
+  font-size: 17px;
+  background: #f5ecdb;
+  font-family: "Open Sans", sans-serif !important;
+  scroll-behavior: smooth;
+}
