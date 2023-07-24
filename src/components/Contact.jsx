@@ -1,11 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import FooterSection from "./FooterSection";
 
 export default function Contact() {
-  const firstInputRef = useRef(null);
-  useEffect(() => {
-    firstInputRef.current.focus();
-  }, []);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -29,8 +25,8 @@ export default function Contact() {
   };
   return (
     <div>
-      <div className='container mx-auto text-center w-full  lg:w-3/4 p-8 md:p-12 lg:p-20'>
-        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-snug word-spacing-4 lg:px-24  font-bold font-sans mb-12'>
+      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-loose word-spacing-4 lg:px-24 font-bold font-sans mb-12'>
           Contact Us
         </h1>
         <p className='leading-8 hidden sm:block'>
@@ -48,7 +44,6 @@ export default function Contact() {
         <form onSubmit={handleSumbmit} method='post'>
           <div className='lg:flex lg:space-x-8'>
             <input
-              ref={firstInputRef}
               type='text'
               name='firstName'
               value={formData.firstName}
