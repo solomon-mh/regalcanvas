@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -17,9 +18,6 @@ export default {
       },
       height: {
         17: "4.5rem",
-      },
-      fontFamily: {
-        jost: "jost",
       },
       fontSize: {
         "6.5xl": "4rem",
