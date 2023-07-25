@@ -30,7 +30,7 @@ export default function Blog() {
       <div className='w-full  bg-white py-16 lg:py-32'>
         <div className='py-12 grid grid-cols-1 gap-4 justify-center items-center sm:grid-cols-2 lg:px-24 lg:grid-cols-3'>
           {imgArr.map((img, index) => (
-            <div className='px-8 lg:px-0'>
+            <div key={index} className='px-8 lg:px-0'>
               <div className='m-4 h-72 lg:h-48 w-full box-border overflow-hidden'>
                 <img
                   className='w-full h-full object-cover transition-all duration-500 hover:scale-105'

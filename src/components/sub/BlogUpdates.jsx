@@ -76,7 +76,7 @@ export default function BlogUpdates() {
           ))}
         </Slider>
       </div>
-      <style jsx>
+      <style>
         {`
           /* Custom dot size */
           .custom-dots li button:before {

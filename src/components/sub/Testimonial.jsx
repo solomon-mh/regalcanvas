@@ -50,7 +50,7 @@ export default function Testimonial() {
         lg:style={{ gridTemplateColumns: "repeat(4, 20%)" }}
       >
         {Testimonials.map((test) => (
-          <div className='bg-antiquewhite py-8 px-4'>
+          <div key={test.id} className='bg-antiquewhite py-8 px-4'>
             <div className='flex justify-between items-center space-x-4 m-3'>
               <div className='w-1/2'>
                 <p className='font-extrabold text-xl leading-6 font-sans text-brightRed'>
