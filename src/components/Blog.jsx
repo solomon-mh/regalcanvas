@@ -47,7 +47,7 @@ export default function Blog() {
                   <b>{data.date}</b>
                   <span className='px-3 text-brightRed'>{data.author}</span>
                 </p>
-                <p>{data.description}</p>
+                <p className='text-simpleLight'>{data.description}</p>
               </div>
             </div>
           ))}

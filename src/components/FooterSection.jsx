@@ -14,7 +14,7 @@ export default function FooterSection() {
       <div className='grid grid-cols-1  gap-6 mx-4 px-4 lg:mx-12 lg:px-12 py-24 lg:grid-cols-4'>
         <div className='text-left mx-auto'>
           <h1 className='font-bold text-brightRed'>MONARCHY</h1>
-          <p className='leading-8'>
+          <p className='leading-8 text-simpleLight'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
             nostrum culpa commodi similique qui, eaque necessitatibus, saepe hic
             repellat suscipit.
