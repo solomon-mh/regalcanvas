@@ -6,6 +6,7 @@ export default function Contact() {
     firstName: "",
     lastName: "",
     textArea: "",
+    email: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +22,7 @@ export default function Contact() {
       firstName: "",
       lastName: "",
       textArea: "",
+      email: "",
     });
   };
   return (
@@ -56,7 +58,7 @@ export default function Contact() {
               onBlur={(e) => {
                 e.target.style.borderColor = "gray";
               }}
-              className='h-12 w-full pl-3 pr-20 font-light py-6 border-1 border-slate-600 rounded my-4 '
+              className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
             <input
               type='text'
@@ -71,10 +73,24 @@ export default function Contact() {
               onBlur={(e) => {
                 e.target.style.borderColor = "gray";
               }}
-              className='h-12 w-full pl-3 pr-20 font-light py-6 border-1 border-slate-600 rounded my-4'
+              className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
           </div>
-          <br />
+          <input
+            type='email'
+            name='email'
+            onChange={handleChange}
+            value={formData.email}
+            placeholder='Email Address'
+            onFocus={(e) => {
+              e.target.style.borderColor = "rgb(240, 125, 125)";
+              e.target.style.outline = "none";
+            }}
+            onBlur={(e) => {
+              e.target.style.borderColor = "gray";
+            }}
+            className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded my-4'
+          />
           <textarea
             name='textArea'
             onChange={handleChange}
