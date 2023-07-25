@@ -10,7 +10,7 @@ export default function Hero() {
     setShowVideo(false);
   };
   return (
-    <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+    <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 lg:pt-12 mb-28'>
       <h1
         style={{
           lineHeight: "1.09",

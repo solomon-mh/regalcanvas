@@ -76,8 +76,11 @@ export default function FooterSection() {
         <p>Copyright ©2023 All rights reserved | This template is cloned by</p>
         <p className='text-brightRed'>Solomon</p>
       </div>
-      <div className='text-center p-4 items-center m-0 bg-gradient-to-br from-slate-300 to-slate-600 transition-all duration-2000 text-slate-200 hover:bg-gradient-to-br hover:from-slate-600 hover:to-purple-300 hover:text-black'>
-        <a className='text-2xl font-mono font-extrabold' href='#nav-bar'>
+      <div className='text-center p-4 items-center m-0 bg-gradient-to-br from-red-100 to-slate-400 transition-all duration-2000 text-red-200 hover:bg-gradient-to-br hover:from-red-100 hover:to-purple-300'>
+        <a
+          className='text-2xl font-jost text-black font-extrabold '
+          href='#nav-bar'
+        >
           Top &uarr;
         </a>
       </div>
