@@ -15,7 +15,10 @@ export default function PortfolioImgCont() {
       <h1 className='text-4xl text-black font-sans m-12'>Portfolio</h1>
       <div className='w-full grid grid-cols-1 gap-4 justify-center items-center sm:grid-cols-2 lg:grid-cols-3'>
         {imgArr.map((img, index) => (
-          <div className='m-4 h-48 w-full box-border overflow-hidden'>
+          <div
+            key={index}
+            className='m-4 h-48 w-full box-border overflow-hidden'
+          >
             <img
               className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
               key={index}
