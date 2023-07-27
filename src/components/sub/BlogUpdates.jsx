@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { imgArr } from "../PortfolioImgCont";
+import { portfolioObj } from "./PortfolioData";
 import person1 from "../../assets/person_1.jpg";
 
 export default function BlogUpdates() {
@@ -42,16 +42,16 @@ export default function BlogUpdates() {
       </div>
       <div className='w-full px-6'>
         <Slider {...settings}>
-          {imgArr.map((img, index) => (
+          {portfolioObj.map((portfolio) => (
             <div
-              key={index}
+              key={portfolio.id}
               className='flex justify-center overflow-hidden mx-auto items-center'
             >
               <div className='m-4 h-48 w-full box-border overflow-hidden'>
                 <img
                   className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
-                  src={img}
-                  alt={`img ${index + 1}`}
+                  src={portfolio.imgName}
+                  alt={`img ${portfolio.id + 1}`}
                 />
               </div>
               <div className='m-4'>
