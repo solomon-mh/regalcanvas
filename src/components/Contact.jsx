@@ -44,7 +44,7 @@ export default function Contact() {
       </div>
       <div className='bg-white block px-12 sm:px-24 gap-16 justify-center items-center lg:flex lg:px-20 lg:py-28'>
         <form onSubmit={handleSumbmit} method='post'>
-          <div className='lg:flex lg:space-x-8'>
+          <div className='lg:flex lg:space-x-8 pt-12'>
             <input
               type='text'
               name='firstName'
@@ -58,7 +58,7 @@ export default function Contact() {
               onBlur={(e) => {
                 e.target.style.borderColor = "gray";
               }}
-              className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
+              className='h-12 w-full my-4 pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
             <input
               type='text'
@@ -73,7 +73,7 @@ export default function Contact() {
               onBlur={(e) => {
                 e.target.style.borderColor = "gray";
               }}
-              className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
+              className='h-12 w-full my-4 pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
           </div>
           <input
