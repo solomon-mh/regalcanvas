@@ -18,8 +18,8 @@ export default function PortfolioDescription() {
   }
 
   return (
-    <div className='w-90perc mx-auto px-24'>
-      <div className=' m-4 h-72 w-1/2  box-border overflow-hidden'>
+    <div className='w-90perc mx-auto px-4 md:px-24'>
+      <div className='m-4 h-72 sm:w-1/2 w-full  box-border overflow-hidden'>
         <img
           className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
           src={portfolio.imgName}
