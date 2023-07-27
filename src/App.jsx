@@ -1,14 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PortfolioDescription from "./components/sub/PortfolioDescription";
+import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
+import { portfolioObj } from "./components/sub/PortfolioData";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import NavBar from "./components/NavBar";
 function App() {
   return (
     <Router>
@@ -20,6 +21,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Service' element={<Service />} />
         <Route path='/Blog' element={<Blog />} />
+        <Route
+          path='/PortfolioDescription/:id'
+          element={<PortfolioDescription/>}
+        />
       </Routes>
     </Router>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { imgArr } from "./PortfolioImgCont";
+import { portfolioObj } from "./sub/PortfolioData";
 import FooterSection from "./FooterSection";
 
 const data = {
@@ -29,14 +29,14 @@ export default function Blog() {
       </div>
       <div className='w-full  bg-white py-16 lg:py-32'>
         <div className='py-12 grid grid-cols-1 gap-4 justify-center items-center sm:grid-cols-2 lg:px-24 lg:grid-cols-3'>
-          {imgArr.map((img, index) => (
-            <div key={index} className='px-8 lg:px-0'>
+          {portfolioObj.map((portfolio) => (
+            <div key={portfolio.id} className='px-8 lg:px-0'>
               <div className='m-4 h-72 lg:h-48 w-full box-border overflow-hidden'>
                 <img
                   className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
-                  key={index}
-                  src={img}
-                  alt={`img ${index + 1}`}
+                  key={portfolio.id}
+                  src={portfolio.imgName}
+                  alt={`img ${portfolio.id + 1}`}
                 />
               </div>
               <div className='px-6'>
