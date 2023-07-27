@@ -12,7 +12,7 @@ export default function PortfolioImgCont() {
             key={portfolio.id}
             className='m-4 h-48 w-full box-border overflow-hidden'
           >
-            <Link to={`/ProfileDescription/${portfolio.id}`}>
+            <Link to={`/PortfolioDescription/${portfolio.id}`}>
               <img
                 className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
                 key={portfolio.id}

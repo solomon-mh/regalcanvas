@@ -8,7 +8,6 @@ import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
-import { portfolioObj } from "./components/sub/PortfolioData";
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
         <Route path='/Blog' element={<Blog />} />
         <Route
           path='/PortfolioDescription/:id'
-          element={<PortfolioDescription/>}
+          element={<PortfolioDescription />}
         />
       </Routes>
     </Router>
