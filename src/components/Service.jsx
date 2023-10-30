@@ -1,7 +1,5 @@
-import React from "react";
 import Products from "./sub/Products";
 import Testimonial from "./sub/Testimonial";
-import FooterSection from "./FooterSection";
 
 export default function Service() {
   return (
@@ -24,7 +22,6 @@ export default function Service() {
       <Products />
       <Products />
       <Testimonial />
-      <FooterSection />
     </div>
   );
 }

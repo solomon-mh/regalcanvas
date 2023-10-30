@@ -1,4 +1,3 @@
-import React from "react";
 import Testimonial from "./sub/Testimonial";
 import Products from "./sub/Products";
 import PortfolioImgCont from "./PortfolioImgCont";
