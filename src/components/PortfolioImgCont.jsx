@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { portfolioObj } from "./sub/PortfolioData";
+import { portfolioObj } from "../data/PortfolioData";
 
 export default function PortfolioImgCont() {
   return (
