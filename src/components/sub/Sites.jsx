@@ -1,4 +1,3 @@
-import React from "react";
 import google from "../../assets/client_google.png";
 import invision from "../../assets/client_invision.png";
 import microfot from "../../assets/client_microsoft.png";

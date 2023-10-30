@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import FooterSection from "./FooterSection";
+import { useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -124,7 +123,6 @@ export default function Contact() {
           <p className='text-simpleLight'>info@yourdomain.com</p>
         </div>
       </div>
-      <FooterSection />
     </div>
   );
 }

@@ -1,6 +1,4 @@
-import React from "react";
 import PortfolioImgCont from "./PortfolioImgCont";
-import FooterSection from "./FooterSection";
 
 export default function Portfolio() {
   return (
@@ -28,7 +26,6 @@ export default function Portfolio() {
       >
         <PortfolioImgCont />
       </div>
-      <FooterSection />
     </div>
   );
 }

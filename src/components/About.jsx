@@ -1,7 +1,5 @@
-import React from "react";
 import Products from "./sub/Products";
 import Testimonial from "./sub/Testimonial";
-import FooterSection from "./FooterSection";
 import office from "../assets/office.jpg";
 import {
   faFacebookF,
@@ -63,7 +61,6 @@ export default function About() {
         <Products />
         <Testimonial />
       </div>
-      <FooterSection />
     </div>
   );
 }

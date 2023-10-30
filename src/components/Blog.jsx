@@ -1,6 +1,4 @@
-import React from "react";
-import { portfolioObj } from "./sub/PortfolioData";
-import FooterSection from "./FooterSection";
+import { portfolioObj } from "../data/PortfolioData";
 
 const data = {
   name: "Lorem ipsum dolor sit amet",
@@ -59,7 +57,6 @@ export default function Blog() {
           <li className='text-brightRed'>4</li>
         </ul>
       </div>
-      <FooterSection />
     </div>
   );
 }

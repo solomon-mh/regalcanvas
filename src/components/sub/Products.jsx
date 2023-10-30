@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Products() {
   return (
     <div className='block py-12 px-4 bg-white lg:space-x-6 lg:justify-center items-center lg:px-12 flex-wrap  lg:flex'>
