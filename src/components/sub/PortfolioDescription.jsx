@@ -1,5 +1,4 @@
-import React from "react";
-import { portfolioObj } from "./PortfolioData";
+import { portfolioObj } from "../../data/PortfolioData";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function PortfolioDescription() {
@@ -35,7 +34,7 @@ export default function PortfolioDescription() {
       </p>
       <p className='m-4 text-simpleLight'>{portfolio.description}</p>
       <button
-        className='bg-blue-500 rounded text-white py-1 px-3 m-3 transition duration-300 cursor-pointer hover:bg-blue-400 hover:text-black'
+        className='bg-blue-500 rounded text-white py-1 px-3 m-3 mb-8 transition duration-300 cursor-pointer hover:bg-blue-400 hover:text-black'
         onClick={handleGoBack}
       >
         Go Back
