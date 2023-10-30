@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 import PortfolioDescription from "./components/sub/PortfolioDescription";
-import Service from "./components/Service";
-import Blog from "./components/Blog";
-import PageNotFound from "./components/404";
+import Service from "./pages/Service";
+import Blog from "./pages/Blog";
+import PageNotFound from "./pages/404";
 
 function App() {
   return (
