@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { whenBlurred, whenFocused } from "../utils/eventHandler";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -50,13 +51,8 @@ export default function Contact() {
               value={formData.firstName}
               onChange={handleChange}
               placeholder='First Name'
-              onFocus={(e) => {
-                e.target.style.borderColor = "rgb(240, 125, 125)";
-                e.target.style.outline = "none";
-              }}
-              onBlur={(e) => {
-                e.target.style.borderColor = "gray";
-              }}
+              onFocus={(e) => whenFocused(e)}
+              onBlur={(e) => whenBlurred(e)}
               className='h-12 w-full my-4 pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
             <input
@@ -65,13 +61,8 @@ export default function Contact() {
               onChange={handleChange}
               value={formData.lastName}
               placeholder='Last Name'
-              onFocus={(e) => {
-                e.target.style.borderColor = "rgb(240, 125, 125)";
-                e.target.style.outline = "none";
-              }}
-              onBlur={(e) => {
-                e.target.style.borderColor = "gray";
-              }}
+              onFocus={(e) => whenFocused(e)}
+              onBlur={(e) => whenBlurred(e)}
               className='h-12 w-full my-4 pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded'
             />
           </div>
@@ -81,13 +72,8 @@ export default function Contact() {
             onChange={handleChange}
             value={formData.email}
             placeholder='Email Address'
-            onFocus={(e) => {
-              e.target.style.borderColor = "rgb(240, 125, 125)";
-              e.target.style.outline = "none";
-            }}
-            onBlur={(e) => {
-              e.target.style.borderColor = "gray";
-            }}
+            onFocus={(e) => whenFocused(e)}
+            onBlur={(e) => whenBlurred(e)}
             className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded my-4'
           />
           <textarea
@@ -98,13 +84,8 @@ export default function Contact() {
             cols='30'
             rows='10'
             placeholder='Write Your Massage here.'
-            onFocus={(e) => {
-              e.target.style.borderColor = "rgb(240, 125, 125)";
-              e.target.style.outline = "none";
-            }}
-            onBlur={(e) => {
-              e.target.style.borderColor = "gray";
-            }}
+            onFocus={(e) => whenFocused(e)}
+            onBlur={(e) => whenBlurred(e)}
             className='relative w-full px-4 py-5 border-1 rounded border-slate-600'
           />
           <button className=' w-full py-3 my-3 rounded-3xl bg-brightRed text-white lg:w-1/2 text-center transition-all duration-500 hover:bg-BrighterRed'>
