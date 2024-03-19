@@ -33,7 +33,7 @@ export default function Blog() {
                 <img
                   className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
                   key={portfolio.id}
-                  src={portfolio.imgName}
+                  src={portfolio.image}
                   alt={`img ${portfolio.id + 1}`}
                 />
               </div>
@@ -50,11 +50,11 @@ export default function Blog() {
             </div>
           ))}
         </div>
-        <ul className='flex mx-auto w-44 justify-around pt-12'>
-          <li>1</li>
-          <li className='text-brightRed'>2</li>
-          <li className='text-brightRed'>3</li>
-          <li className='text-brightRed'>4</li>
+        <ul className='flex text-brightRed mx-auto w-44 justify-around pt-12'>
+          <li className='first:text-black'>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
         </ul>
       </div>
     </div>
