@@ -18,14 +18,14 @@ export default function Portfolio() {
           nulla quos suscipit laborum fugit aspernatur rem pariatur illo.
         </p>
       </div>
-      <div
+      <section
         style={{
           backgroundColor: "white",
         }}
         className='py-16'
       >
         <PortfolioImgCont />
-      </div>
+      </section>
     </div>
   );
 }
