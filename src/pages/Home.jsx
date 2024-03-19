@@ -5,11 +5,11 @@ import Sites from "../components/sub/Sites";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero />
       <SiteSection />
       <BlogUpdates />
       <Sites />
-    </div>
+    </main>
   );
 }
