@@ -10,20 +10,20 @@ export default function Hero() {
     setShowVideo(false);
   };
   return (
-    <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 lg:pt-12 mb-28'>
+    <section className='container mx-auto text-center p-6 md:p-12 lg:p-16'>
       <h1
         style={{
-          lineHeight: "1.09",
+          lineHeight: "1.19",
         }}
-        className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl lg:px-24 font-extrabold mb-12'
+        className='text-brightRed text-5xl  w-3/5 m-auto lg:text-6.5xl lg:px-24 font-extrabold mb-12'
       >
         Do What You Love
       </h1>
-      <p className='leading-8 hidden sm:block'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt
-        vitae fugit harum architecto doloribus facere omnis recusandae pariatur
-        porro quis alias quas animi, dignissimos fuga ab reprehenderit
-        repudiandae ea?
+      <p className='leading-8 w-4/5 m-auto hidden sm:block'>
+        When You do what you love most life become so much easier and so much
+        fun.So you will start enjoying it.So don&apos;t ever afraid to jump into
+        doing what you love most,Because life is all about savoring the
+        moment.So enjoy it.
       </p>
       <p className='leading-8 block sm:hidden'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem
@@ -57,6 +57,6 @@ export default function Hero() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
