@@ -21,7 +21,7 @@ export default function PortfolioDescription() {
       <div className='m-4 h-72 sm:w-1/2 w-full  box-border overflow-hidden'>
         <img
           className='w-full h-full object-cover transition-all duration-500 hover:scale-105'
-          src={portfolio.imgName}
+          src={portfolio.image}
           alt={`Portfolio ${portfolioId}`}
         />
       </div>
