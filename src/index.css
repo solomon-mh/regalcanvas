@@ -1,13 +1,19 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+:root {
+  --bg-primary-color: #f5ecdb;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+}
 body {
   line-height: 1.7;
   font-weight: 300;
   color: #000;
   font-size: 17px;
-  background: #f5ecdb;
+  background: var(--bg-primary-color);
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
 }
