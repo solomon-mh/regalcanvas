@@ -1,6 +1,7 @@
 
 # RegalCanvas
 **RegalCanvas**
+
 *"RegalCanvas" is a project name that encapsulates the essence of sophistication, elegance, and professionalism. It represents a platform or template designed for creating striking and impressive portfolios or websites, akin to a canvas upon which one can showcase their skills, talents, and achievements in a regal manner. It symbolizes the idea of creating a digital masterpiece, evoking a sense of grandeur and refinement in the online presentation of one's work.*
 
 https://lustrous-biscuit-fd717c.netlify.app/
