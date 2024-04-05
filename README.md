@@ -7,7 +7,7 @@
 https://lustrous-biscuit-fd717c.netlify.app/
 
 ### Using React and tailwindcss
-~ https://preview.colorlib.com/#monarchy clone
+ Cloned form this Site 👉 ~ https://preview.colorlib.com/#monarchy
 ## output
 <div>
 <img src="https://github.com/SolomonMuhyeY/E-CommerceWebsite-react/assets/132606059/0d835804-e959-410c-8d85-da77edb39203" alt="sample1" width="300" height="200">
