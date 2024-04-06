@@ -89,7 +89,7 @@ export default function NavBar() {
       <div className='md:hidden'>
         <button
           onClick={handleMenuToggle}
-          className='flex items-center absolute top-0 right-2 z-50 px-3 mt-2 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
+          className='flex items-center fixed top-0 right-2 z-50 px-3 mt-2 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
         >
           {menuOpen ? (
             <FontAwesomeIcon icon={faTimes} />
@@ -103,7 +103,7 @@ export default function NavBar() {
         <div
           className={`md:hidden fixed right-0 bg-white mx-0 px-2 py-4 transition-all duration-700 ${
             menuOpen ? "w-64" : "w-0"
-          }`}
+          } h-full`}
         >
           <Link
             className={`block px-3 py-2 rounded-md text-base font-medium ${
@@ -126,7 +126,7 @@ export default function NavBar() {
           <Link
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               activeLink === "/About" ? "active-link-sm" : ""
-            }`}
+            } h-full`}
             to='/About'
             onClick={() => handleLinkClick("/About")}
           >
