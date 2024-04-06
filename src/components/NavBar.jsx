@@ -7,6 +7,7 @@ import { faNavicon, faTimes } from "@fortawesome/free-solid-svg-icons";
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuWidth, setMenuWidth] = useState(0);
 
   const handleLinkClick = (to) => {
     setActiveLink(to);
@@ -15,30 +16,18 @@ export default function NavBar() {
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
+    setMenuWidth(menuWidth === 0 ? 250 : 0);
   };
 
   return (
     <nav
       id='nav-bar'
-      className='flex gap-12 justify-between sm:justify-end w-full px-6 pr-0 lg:p-12  lg:pr-24 '
+      className='flex md:static gap-0 md:gap-12 justify-between sm:justify-end w-full px-6 pr-0 lg:p-12  lg:pr-24 z-50'
     >
       <div className='container mx-auto px-4 md:px-8'>
         <div className='flex justify-between -ml-4 items-center h-16'>
           <div className='mr-auto  text-brightRed font-bold cursor-pointer'>
             MONARCHY
-          </div>
-          {/* Hamburger menu icon */}
-          <div className='md:hidden'>
-            <button
-              onClick={handleMenuToggle}
-              className='flex items-center px-3 mt-6 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
-            >
-              {menuOpen ? (
-                <FontAwesomeIcon icon={faTimes} />
-              ) : (
-                <FontAwesomeIcon icon={faNavicon} />
-              )}
-            </button>
           </div>
           {/* Desktop navigation */}
           <div className={`hidden md:flex md:space-x-8 items-center`}>
@@ -98,64 +87,78 @@ export default function NavBar() {
         </div>
       </div>
       {/* Mobile menu */}
+      {/* Hamburger menu icon */}
+      <div className='md:hidden'>
+        <button
+          onClick={handleMenuToggle}
+          className='flex items-center absolute top-0 right-2 z-50 px-3 mt-6 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
+        >
+          {menuOpen ? (
+            <FontAwesomeIcon icon={faTimes} />
+          ) : (
+            <FontAwesomeIcon icon={faNavicon} />
+          )}
+        </button>
+      </div>
       {menuOpen && (
-        <div className='md:hidden pr-12m relative bg-white mx-0'>
-          <div className='px-2 w-48 py-4 space-y-1'>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/" ? "active-link-sm" : ""
-              }`}
-              to='/'
-              onClick={() => handleLinkClick("/")}
-            >
-              Home
-            </Link>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/Portfolio" ? "active-link-sm" : ""
-              }`}
-              to='/Portfolio'
-              onClick={() => handleLinkClick("/Portfolio")}
-            >
-              Portfolio
-            </Link>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/About" ? "active-link-sm" : ""
-              }`}
-              to='/About'
-              onClick={() => handleLinkClick("/About")}
-            >
-              About
-            </Link>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/Service" ? "active-link-sm" : ""
-              }`}
-              to='/Service'
-              onClick={() => handleLinkClick("/Service")}
-            >
-              Services
-            </Link>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/Blog" ? "active-link-sm" : ""
-              }`}
-              to='/Blog'
-              onClick={() => handleLinkClick("/Blog")}
-            >
-              Blog
-            </Link>
-            <Link
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                activeLink === "/Contact" ? "active-link-sm" : ""
-              }`}
-              to='/Contact'
-              onClick={() => handleLinkClick("/Contact")}
-            >
-              Contact
-            </Link>
-          </div>
+        <div
+          className='md:hidden fixed right-0 bg-white max-h-screen pr-4 mx-0 px-2 w-0 py-4'
+          style={{ width: menuWidth }}
+        >
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/" ? "active-link-sm" : ""
+            }`}
+            to='/'
+            onClick={() => handleLinkClick("/")}
+          >
+            Home
+          </Link>
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/Portfolio" ? "active-link-sm" : ""
+            }`}
+            to='/Portfolio'
+            onClick={() => handleLinkClick("/Portfolio")}
+          >
+            Portfolio
+          </Link>
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/About" ? "active-link-sm" : ""
+            }`}
+            to='/About'
+            onClick={() => handleLinkClick("/About")}
+          >
+            About
+          </Link>
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/Service" ? "active-link-sm" : ""
+            }`}
+            to='/Service'
+            onClick={() => handleLinkClick("/Service")}
+          >
+            Services
+          </Link>
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/Blog" ? "active-link-sm" : ""
+            }`}
+            to='/Blog'
+            onClick={() => handleLinkClick("/Blog")}
+          >
+            Blog
+          </Link>
+          <Link
+            className={`block px-3 py-2 rounded-md text-base font-medium ${
+              activeLink === "/Contact" ? "active-link-sm" : ""
+            }`}
+            to='/Contact'
+            onClick={() => handleLinkClick("/Contact")}
+          >
+            Contact
+          </Link>
         </div>
       )}
     </nav>
