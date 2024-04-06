@@ -101,9 +101,9 @@ export default function NavBar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className={`md:hidden fixed right-0 bg-white mx-0 px-2 py-4 transition-all duration-700 ${
-            menuOpen ? "w-64" : "w-0"
-          } h-full`}
+          className={`z-30 md:hidden fixed right-0 bg-white mx-0 px-2 py-4 ${
+            menuOpen ? "w-[230px]" : "w-0"
+          } h-[600px]`}
         >
           <Link
             className={`nav_links ${
@@ -126,7 +126,7 @@ export default function NavBar() {
           <Link
             className={`nav_links ${
               activeLink === "/About" ? "active-link-sm" : ""
-            } h-full`}
+            }`}
             to='/About'
             onClick={() => handleLinkClick("/About")}
           >
