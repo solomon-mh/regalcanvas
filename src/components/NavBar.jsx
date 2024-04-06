@@ -106,7 +106,7 @@ export default function NavBar() {
           } h-full`}
         >
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/" ? "active-link-sm" : ""
             }`}
             to='/'
@@ -115,7 +115,7 @@ export default function NavBar() {
             Home
           </Link>
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/Portfolio" ? "active-link-sm" : ""
             }`}
             to='/Portfolio'
@@ -124,7 +124,7 @@ export default function NavBar() {
             Portfolio
           </Link>
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/About" ? "active-link-sm" : ""
             } h-full`}
             to='/About'
@@ -133,7 +133,7 @@ export default function NavBar() {
             About
           </Link>
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/Service" ? "active-link-sm" : ""
             }`}
             to='/Service'
@@ -142,7 +142,7 @@ export default function NavBar() {
             Services
           </Link>
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/Blog" ? "active-link-sm" : ""
             }`}
             to='/Blog'
@@ -151,7 +151,7 @@ export default function NavBar() {
             Blog
           </Link>
           <Link
-            className={`block px-3 py-2 rounded-md text-base font-medium ${
+            className={`nav_links ${
               activeLink === "/Contact" ? "active-link-sm" : ""
             }`}
             to='/Contact'
