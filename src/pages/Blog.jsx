@@ -1,4 +1,5 @@
 import { portfolioObj } from "../data/PortfolioData";
+import ScrollToTop from "../utils/ScrollToTop";
 
 const data = {
   name: "Lorem ipsum dolor sit amet",
@@ -57,6 +58,7 @@ export default function Blog() {
           <li>4</li>
         </ul>
       </div>
+      <ScrollToTop />
     </div>
   );
 }
