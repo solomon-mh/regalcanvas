@@ -101,9 +101,9 @@ export default function NavBar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className={`z-30 md:hidden fixed right-0 bg-white mx-0 px-2 py-4 ${
-            menuOpen ? "w-[230px]" : "w-0"
-          } h-[600px]`}
+          className={`z-30 md:hidden fixed right-0 bg-white  mx-0 px-2 py-4 ${
+            menuOpen ? "w-[230px] h-[600px]" : "w-0 h-0"
+          } nav-menu`}
         >
           <Link
             className={`nav_links ${
