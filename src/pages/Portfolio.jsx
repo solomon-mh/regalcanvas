@@ -1,4 +1,5 @@
 import PortfolioImgCont from "../components/PortfolioImgCont";
+import ScrollToTop from "../utils/ScrollToTop";
 
 export default function Portfolio() {
   return (
@@ -26,6 +27,7 @@ export default function Portfolio() {
       >
         <PortfolioImgCont />
       </section>
+      <ScrollToTop />
     </div>
   );
 }
