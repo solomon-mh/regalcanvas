@@ -1,23 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+import "../styles/navbar.css";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [menuWidth, setMenuWidth] = useState(0);
 
   const handleLinkClick = (to) => {
     setActiveLink(to);
     setMenuOpen(false);
-    setMenuWidth(0);
   };
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
-    setMenuWidth(menuWidth === 0 ? 250 : 0);
   };
 
   return (
@@ -87,12 +85,11 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-      {/* Mobile menu */}
       {/* Hamburger menu icon */}
       <div className='md:hidden'>
         <button
           onClick={handleMenuToggle}
-          className='flex items-center absolute top-0 right-2 z-50 px-3 mt-6 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
+          className='flex items-center absolute top-0 right-2 z-50 px-3 mt-2 py-2 border rounded text-brightRed hover:text-white hover:bg-brightRed focus:outline-none '
         >
           {menuOpen ? (
             <FontAwesomeIcon icon={faTimes} />
@@ -101,10 +98,12 @@ export default function NavBar() {
           )}
         </button>
       </div>
+      {/* Mobile menu */}
       {menuOpen && (
         <div
-          className='md:hidden fixed right-0 bg-white max-h-screen pr-4 mx-0 px-2 py-4'
-          style={{ width: menuWidth }}
+          className={`md:hidden fixed right-0 bg-white mx-0 px-2 py-4 transition-all duration-700 ${
+            menuOpen ? "w-64" : "w-0"
+          }`}
         >
           <Link
             className={`block px-3 py-2 rounded-md text-base font-medium ${
