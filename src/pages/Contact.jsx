@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { whenBlurred, whenFocused } from "../utils/eventHandler";
+import ScrollToTop from "../utils/ScrollToTop";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -104,6 +105,7 @@ export default function Contact() {
           <p className='text-simpleLight'>info@yourdomain.com</p>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 }
