@@ -12,6 +12,7 @@ export default function NavBar() {
   const handleLinkClick = (to) => {
     setActiveLink(to);
     setMenuOpen(false);
+    setMenuWidth(0);
   };
 
   const handleMenuToggle = () => {
@@ -102,7 +103,7 @@ export default function NavBar() {
       </div>
       {menuOpen && (
         <div
-          className='md:hidden fixed right-0 bg-white max-h-screen pr-4 mx-0 px-2 w-0 py-4'
+          className='md:hidden fixed right-0 bg-white max-h-screen pr-4 mx-0 px-2 py-4'
           style={{ width: menuWidth }}
         >
           <Link
