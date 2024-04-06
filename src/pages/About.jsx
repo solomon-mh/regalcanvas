@@ -1,6 +1,8 @@
 import Products from "../components/sub/Products";
 import Testimonial from "../components/sub/Testimonial";
+import ScrollToTop from "../utils/ScrollToTop";
 import office from "../assets/office.jpg";
+
 import {
   faFacebookF,
   faInstagram,
@@ -60,6 +62,7 @@ export default function About() {
         </section>
         <Products />
         <Testimonial />
+        <ScrollToTop />
       </div>
     </div>
   );
