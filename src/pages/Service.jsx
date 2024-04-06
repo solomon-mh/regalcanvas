@@ -1,5 +1,6 @@
 import Products from "../components/sub/Products";
 import Testimonial from "../components/sub/Testimonial";
+import ScrollToTop from "../utils/ScrollToTop";
 
 export default function Service() {
   return (
@@ -22,6 +23,7 @@ export default function Service() {
       <Products />
       <Products />
       <Testimonial />
+      <ScrollToTop />
     </div>
   );
 }
