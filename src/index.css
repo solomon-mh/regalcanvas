@@ -25,6 +25,9 @@ h1 {
 .hero_div {
   @apply container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28;
 }
+.hero_header {
+  @apply text-brightRed text-4xl mb-6 sm:text-4xl lg:text-6.5xl leading-loose lg:px-24 font-bold font-sans md:mb-12;
+}
 .nav_links {
   @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-stone-300 hover:text-white hover:-translate-y-[1px] transition-transform duration-300;
 }
