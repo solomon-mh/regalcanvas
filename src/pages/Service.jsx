@@ -5,7 +5,7 @@ import ScrollToTop from "../utils/ScrollToTop";
 export default function Service() {
   return (
     <div>
-      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+      <div className='hero_div'>
         <h1 className='text-brightRed leading-loose word-spacing-4 font-bold font-sans mb-12 text-2xl sm:text-4xl lg:text-6.5xl lg:px-24 '>
           Our Services
         </h1>
