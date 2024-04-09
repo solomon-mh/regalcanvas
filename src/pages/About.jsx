@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div>
       <div className='hero_div'>
-        <h1 className='text-brightRed font-bold font-sans mb-12 text-2xl leading-loose word-spacing-4 sm:text-4xl lg:text-6.5xl  lg:px-24 '>
+        <h1 className='text-brightRed font-bold font-sans mb-12 text-2xl leading-loose sm:text-4xl lg:text-6.5xl  lg:px-24 '>
           About Us
         </h1>
         <p className='leading-8 hidden sm:block'>
