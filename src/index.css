@@ -1,9 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-.link_hover {
-  @apply hover:bg-stone-300 hover:text-white hover:-translate-y-[1px] transition-transform duration-300;
-}
+
 :root {
   --bg-primary-color: #f5ecdb;
   --color-dark--1: #2d3439;
@@ -24,6 +22,9 @@ h1 {
   font-family: "Jost", sans-serif !important;
   font-weight: 900;
 }
+.hero_div {
+  @apply container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28;
+}
 .nav_links {
-  @apply block px-3 py-2 rounded-md text-base font-medium;
+  @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-stone-300 hover:text-white hover:-translate-y-[1px] transition-transform duration-300;
 }
