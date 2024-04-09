@@ -13,7 +13,7 @@ import SocialMediaIcon from "../components/sub/SocialMediaIcon";
 export default function About() {
   return (
     <div>
-      <div className='container mx-auto text-center w-full   p-6 md:p-12 lg:w-3/4 lg:p-20 mb-28'>
+      <div className='hero_div'>
         <h1 className='text-brightRed font-bold font-sans mb-12 text-2xl leading-loose word-spacing-4 sm:text-4xl lg:text-6.5xl  lg:px-24 '>
           About Us
         </h1>
