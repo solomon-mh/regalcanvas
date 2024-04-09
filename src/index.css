@@ -1,6 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.link_hover {
+  @apply hover:bg-stone-300 hover:text-white hover:-translate-y-[1px] transition-transform duration-300;
+}
 :root {
   --bg-primary-color: #f5ecdb;
   --color-dark--1: #2d3439;
