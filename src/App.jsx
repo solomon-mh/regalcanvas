@@ -7,7 +7,7 @@ import { Suspense, lazy } from "react";
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
-const Portfolio = lazy(() => import("./pages/Home"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Service = lazy(() => import("./pages/Service"));
 const Blog = lazy(() => import("./pages/Blog"), 4000);
 const PageNotFound = lazy(() => import("./pages/404"));
