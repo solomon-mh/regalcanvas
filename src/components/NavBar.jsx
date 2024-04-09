@@ -106,7 +106,7 @@ export default function NavBar() {
           }`}
         >
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/" ? "active-link-sm" : ""
             }`}
             to='/'
@@ -115,7 +115,7 @@ export default function NavBar() {
             Home
           </Link>
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/Portfolio" ? "active-link-sm" : ""
             }`}
             to='/Portfolio'
@@ -124,7 +124,7 @@ export default function NavBar() {
             Portfolio
           </Link>
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/About" ? "active-link-sm" : ""
             }`}
             to='/About'
@@ -133,7 +133,7 @@ export default function NavBar() {
             About
           </Link>
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/Service" ? "active-link-sm" : ""
             }`}
             to='/Service'
@@ -142,7 +142,7 @@ export default function NavBar() {
             Services
           </Link>
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/Blog" ? "active-link-sm" : ""
             }`}
             to='/Blog'
@@ -151,7 +151,7 @@ export default function NavBar() {
             Blog
           </Link>
           <Link
-            className={`nav_links ${
+            className={`nav_links link_hover ${
               activeLink === "/Contact" ? "active-link-sm" : ""
             }`}
             to='/Contact'
