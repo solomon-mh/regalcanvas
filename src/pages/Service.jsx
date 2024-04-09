@@ -6,9 +6,7 @@ export default function Service() {
   return (
     <div>
       <div className='hero_div'>
-        <h1 className='text-brightRed leading-loose word-spacing-4 font-bold font-sans mb-12 text-2xl sm:text-4xl lg:text-6.5xl lg:px-24 '>
-          Our Services
-        </h1>
+        <h1 className='hero_header'>Our Services</h1>
         <p className='leading-8 hidden sm:block'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
           incidunt vitae fugit harum architecto doloribus facere omnis
