@@ -28,7 +28,7 @@ export default function Contact() {
   };
   return (
     <div>
-      <div className='container mx-auto text-center w-full  lg:w-3/4 p-6 md:p-12 lg:p-20 mb-28'>
+      <div className='hero_div'>
         <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-loose word-spacing-4 lg:px-24 font-bold font-sans mb-12'>
           Contact Us
         </h1>
