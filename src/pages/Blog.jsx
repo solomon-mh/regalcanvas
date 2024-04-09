@@ -12,9 +12,7 @@ export default function Blog() {
   return (
     <div>
       <div className='hero_div'>
-        <h1 className='text-brightRed text-2xl sm:text-4xl lg:text-6.5xl leading-loose word-spacing-4 lg:px-24 font-bold font-sans mb-12'>
-          Blog Updates
-        </h1>
+        <h1 className='hero_header'>Blog Updates</h1>
         <p className='leading-8 hidden sm:block'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
           incidunt vitae fugit harum architecto doloribus facere omnis
