@@ -73,7 +73,14 @@ export default function FooterSection() {
       </div>
       <div className='text-center pb-12'>
         <p>Copyright ©2023 All rights reserved | This template is cloned by</p>
-        <p className='text-brightRed'>Solomon</p>
+        <a
+          href='https://solomommuhye.netlify.app/'
+          target='_blank'
+          className='text-brightRed cursor-pointer my-5 font-bold'
+          rel='noreferrer'
+        >
+          Solomon Muhye
+        </a>
       </div>
     </div>
   );
