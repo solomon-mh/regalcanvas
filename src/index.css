@@ -29,5 +29,5 @@ h1 {
   @apply text-brightRed text-4xl mb-6 sm:text-4xl lg:text-6.5xl leading-loose lg:px-24 font-bold font-sans md:mb-12;
 }
 .nav_links {
-  @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-stone-300 hover:text-white hover:-translate-y-[1px] transition-transform duration-300;
+  @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-[#f5ecdb] hover:text-[#f26200] hover:-translate-y-[1px] transition-transform duration-300;
 }
