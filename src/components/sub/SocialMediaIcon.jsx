@@ -10,7 +10,7 @@ export default function SocialMediaIcon({ icon }) {
 }
 export function SmallSocialMediaIcon({ icon }) {
   return (
-    <li className='transition duration-300 flex items-center justify-center cursor-pointer hover:text-BrighterRed'>
+    <li className='transition duration-300 flex items-center justify-center cursor-pointer hover:scale-110  hover:text-BrighterRed'>
       <FontAwesomeIcon icon={icon} />
     </li>
   );
