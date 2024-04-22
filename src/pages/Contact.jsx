@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { whenBlurred, whenFocused } from "../utils/eventHandler";
 import ScrollToTop from "../utils/ScrollToTop";
 
@@ -18,14 +19,40 @@ export default function Contact() {
   };
   const handleSumbmit = (e) => {
     e.preventDefault();
+
+    const serviceId = "service_m3dnecs";
+    const templateId = "template_9u7uphs";
+    const publicKey = "gPbrAZqWiTvm9xjqA";
+
+    const templateParams = {
+      from_name: formData.firstName + formData.lastName,
+      from_email: formData.email,
+      to_name: "solomon",
+      message: formData.message,
+    };
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((res) => {
+        console.log("Sent!", res);
+        setFormData({
+          firstName: "",
+          lastName: "",
+          message: "",
+          email: "",
+        });
+      })
+      .catch((err) => {
+        console.log("Error Sending Email", err.message);
+      });
     console.log(formData);
     setFormData({
       firstName: "",
       lastName: "",
-      textArea: "",
+      message: "",
       email: "",
     });
   };
+
   return (
     <div>
       <div className='hero_div'>
@@ -76,9 +103,9 @@ export default function Contact() {
             className='h-12 w-full pl-3 pr-20 font-light py-7 border-1 border-slate-600 rounded my-4'
           />
           <textarea
-            name='textArea'
+            name='message'
             onChange={handleChange}
-            value={formData.textArea}
+            value={formData.message}
             id=''
             cols='30'
             rows='10'
