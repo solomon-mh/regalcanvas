@@ -7,7 +7,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    textArea: "",
+    message: "",
     email: "",
   });
   const handleChange = (e) => {
@@ -44,13 +44,6 @@ export default function Contact() {
       .catch((err) => {
         console.log("Error Sending Email", err.message);
       });
-    console.log(formData);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      message: "",
-      email: "",
-    });
   };
 
   return (
